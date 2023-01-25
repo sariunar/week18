@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опросник</title>
+</head>
+<body>
+    <form >
+        <fieldset>
+            <legend>Имя</legend>
+            <div>
+                <label for="nickname_cat">Кличка питомца:</label>
+                <input type="text" id="nickname_cat" required>*
+            </div><br>
+            <div>
+                <label for="name">Имя владельца:</label>
+                <input type="text" id="name" />
+            </div><br>
+            <div>
+                <label for="phone">Контакты владельца:</label>
+                <input type="tel" id="phone"  required >*
+            </div>
+        </fieldset>
+        <br>
+        <div>
+            <label>Порода питомца:</label>
+            <select>
+                <option value="1">Персидская кошка</option>
+                <option value="2">Мейн-кун</option>
+                <option value="3">Британская короткошерстная</option>
+                <option value="4">Бенгальская</option>
+                <option value="5">Сиамская</option>
+                <option value="6">Гималайская</option>
+            </select>
+        </div><br>
+        <div >
+            <label>Чем питается?</label><br>
+            <input type="checkbox" id="dry" />
+            <label for="dry">сухой корм</label><br>
+            <input type="checkbox" id="wet" />
+            <label for="wet">влажный корм</label><br>
+            <input type="checkbox" id="natural" />
+            <label for="natural">натуральный корм</label>
+        </div><br>
+        <div>
+            <label>Самец или самка?</label><br>
+            Самец<input type="radio" name="sex" /><br>
+            Самка<input type="radio" name="sex" />
+        </div><br>
+        <div>
+            <label for="comment" >Комментарий:</label><br>
+            <textarea rows="10" cols="40" id="comment" required minlength="20" maxlength="200"></textarea>
+        </div>
+        <div>
+            <label for="photo">Добавьте фото питомца</label><br>
+            <input type="file" id="photo" />
+        </div><br>
+        <button>Сохранить</button>
+    </form>
+    <script src="cat.js"></script>
+</body>
+</html>

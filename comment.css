@@ -1,0 +1,48 @@
+.form{
+    display: grid;
+    width: 100%;
+}
+.form__p{
+    border-bottom: 1px solid gray; 
+    color: gray;
+}
+.form__comment{
+    border: 1px solid rgb(105, 104, 104);
+}
+.form__comment:focus{
+    outline: none;
+}
+.form__btn{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 174, 0);
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 600;
+    color: rgb(119, 116, 116);
+    cursor: pointer;
+}
+.form__btn:hover{
+    background-color: rgb(228, 228, 68);
+}
+#container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.span {
+    font-size: 10px;
+    color: royalblue;
+}
+.text {
+    background-color: rgb(218, 218, 218);
+    padding: 16px;
+    width: 70%;
+    margin-bottom: 5px;
+}
+.p{
+    width: 90%;
+}
